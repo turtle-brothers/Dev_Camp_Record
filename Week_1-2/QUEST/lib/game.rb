@@ -14,18 +14,12 @@ class Game
 
     def initialize_game
         @cards = Card.deck_generator.shuffle
-        # player_shuffle_card = @cards.slice!(0, 2)
-        # print player_shuffle_card
         @player = Player.new(Card.new(@cards.shift.send(:suit), @cards.shift.send(:number)), Card.new(@cards.shift.send(:suit), @cards.shift.send(:number)))
         @dealer = Dealer.new(Card.new(@cards.shift.send(:suit), @cards.shift.send(:number)), Card.new(@cards.shift.send(:suit), @cards.shift.send(:number)))
-        # @dealer = Dealer.new(Card.new(@cards.slice!(0, 2)))
-        # print @player.cards
-        # print @dealer
     end
 
     def show_info
         @player.cards.each do |card|
-            # print card.send(:suit)
             show_player_info(card)
         end
 
@@ -60,13 +54,6 @@ class Game
 
         bust_judge_result
 
-        # if @player.total > @dealer.total
-        #     puts "あなたの勝ちです！"
-        # elsif  @player.total > @dealer.total
-        #     puts "ディーラーの勝ちです！"
-        # else puts "ディーラーの勝ちです！"
-        # end
-
     end
 
     def player_hit_stand
@@ -74,9 +61,7 @@ class Game
         input = gets.chomp.downcase
         if input == 'y'
             card = Card.new(@cards.shift.send(:suit), @cards.shift.send(:number))
-            # card = @cards.slice!(0, 1)
             @player.hit(card)
-            # print card
             show_player_info(card)
         else
             @player.stand!
@@ -92,22 +77,18 @@ class Game
 
 
     def show_player_info(card)
-        # player_card = Card.new(suit, number)
         puts "あなたの引いたカードは#{card.card_info}"
     end
 
     def show_dealer_info(card)
-        # dealer_card = Card.new(suit, number)
         puts "ディーラーの引いたカードは#{card.card_info}"
     end
 
     def show_player_total_info
-        # player_card = Card.new(suit, number)
         puts "あなたの得点は#{@player.total}です。"
     end
 
     def show_dealer_total_info
-        # player_card = Card.new(suit, number)
         puts "ディーラーの得点は#{@dealer.total}です。"
     end
 
