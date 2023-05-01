@@ -6,7 +6,7 @@ echo '次の選択肢から入力してください(Add Password/Get Password/Ex
 PASSWORD_FILE="password.txt"
 extension=".gpg"
 ENCRYPTED_PASSWORD_FILE+="${PASSWORD_FILE}${extension}"
-gpg_pass=$(cat gpg_password)
+gpg_pass=$(cat gpg_passfrase)
 
 while :
 do
