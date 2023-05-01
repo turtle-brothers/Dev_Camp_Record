@@ -6,7 +6,9 @@
 ターミナル上で次のコマンドを実行して下さい。
 
 git clone https://github.com/turtle-brothers/Dev_Camp_Record.git
+<br>
 cd ./week_3-4/QUEST
+<br>
 ./password_manager.sh
 
 ## 使い方
@@ -23,7 +25,9 @@ Add Password が入力されると、サービス名、ユーザー名、パス�
 
 ### Add Password が入力された場合
 サービス名を入力してください：
+<br>
 ユーザー名を入力してください：
+<br>
 パスワードを入力してください：
 
 パスワードの追加に成功しました。
@@ -37,7 +41,9 @@ Add Password が入力されると、サービス名、ユーザー名、パス�
 
 #### サービス名が保存されていた場合
 サービス名：hoge
+<br>
 ユーザー名：fuga
+<br>
 パスワード：piyo
 
 次の選択肢から入力してください(Add Password/Get Password/Exit)：
