@@ -7,7 +7,8 @@ class Dealer < User
         @cards = [first_card, second_card]
     end
 
-    def stop
+    #カード合計値が17以上
+    def finished
         total >= 17
     end
 

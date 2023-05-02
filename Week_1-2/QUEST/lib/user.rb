@@ -1,13 +1,16 @@
 class User
 
+    #カード追加
     def hit(card)
         cards << card
     end
 
+    #カード合計値が21以上
     def bust
         total > 21
     end
 
+    #カード合計値を計算
     def total
         # print cards
         if cards.map(&:convert_number).include?([1, 11])

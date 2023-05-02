@@ -12,6 +12,7 @@ class Card
         @number = number
     end
 
+    #カードデッキを作成
     def self.deck_generator
         SUITS.product(NUMBERS).map { |suit, num| self.new(suit, num) }
         # deck = []
@@ -19,6 +20,7 @@ class Card
         # print deck
     end
 
+    #絵札の数値変換
     def convert_number
         case number
         when 'J', 'Q', 'K'
@@ -32,6 +34,7 @@ class Card
 
     end
 
+    #マークの文字変換
     def convert_text
         case suit
         when :spade then 'スペード'
@@ -41,6 +44,7 @@ class Card
         end
     end
 
+    #カード情報の表示
     def card_info
         "#{convert_text}の#{number}です。"
     end
