@@ -9,6 +9,9 @@
 
 /Week_5-6/practise/
 /Week_5-6/reference/
-/week_5-6/QUEST/ER_diagram.md
+/week_5-6/QUEST/*
+!/week_5-6/QUEST/README.md
+
+
 
 /Week_9-10/reference/
