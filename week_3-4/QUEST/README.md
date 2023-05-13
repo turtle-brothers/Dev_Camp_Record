@@ -10,6 +10,8 @@ git clone https://github.com/turtle-brothers/Dev_Camp_Record.git
 cd ./week_3-4/QUEST
 <br>
 ./password_manager.sh
+<br>
+chmod 775 ./password_manager.sh
 
 ## 使い方
 シェルスクリプトを実行すると、以下のメニューが表示されます。
