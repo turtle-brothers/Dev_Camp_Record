@@ -28,7 +28,7 @@ do
       echo "$gpg_pass" | gpg --passphrase="$gpg_pass" --batch --yes --quiet -o "$PASSWORD_FILE" -d "$ENCRYPTED_PASSWORD_FILE"
       if grep -q "^${service_name}" "$PASSWORD_FILE"; then
           array=($(tac "$PASSWORD_FILE" | grep -m 1 "^${service_name}"))
-          array_split=(${ array//:/ })
+          array_split=(${array//:/ })
           echo "service_name:${array_split[0]}"
           echo "user_name:${array_split[1]}"
           echo "password:${array_split[2]}"
