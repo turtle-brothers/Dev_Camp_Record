@@ -93,7 +93,7 @@
 <details>
 <summary>3. ER図</summary>
 <p>
-![ER_diagram](https://github.com/turtle-brothers/Dev_Camp_Record/assets/62471053/6c129c7e-51d2-4f45-a928-12912967c7fd)
+![ER_diagram](https://github.com/turtle-brothers/Dev_Camp_Record/assets/62471053/4fc99665-c7b9-459b-9cf4-5edad0ad0367)
 
 </p>
 </details>
