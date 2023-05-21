@@ -1,0 +1,293 @@
+body{
+  color: #082B48;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 1.5;
+}
+
+img{
+  width: 100%;
+  height: auto;
+}
+
+a{
+  text-decoration: none;
+  color: #082B48;
+}
+
+a:hover{
+  opacity: 0.7;
+}
+
+.container{
+  width: 90%;
+  max-width: 980px;
+  margin: auto;
+}
+
+.clear::after{
+  content: "";
+  clear: both;
+  display: block;
+}
+
+/*=============================
+header
+=============================*/
+
+header{
+  padding: 20px 0;
+}
+
+.header-left{
+  float:left;
+}
+
+.header-title {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.header-right{
+  float:right;
+}
+
+.header-navi-item{
+  float: left;
+  margin-left: 50px;
+}
+
+.header-navi-item a{
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 36px;
+}
+
+/*=============================
+top
+=============================*/
+.top{
+  background-image: url(../img/main-vsual-nontitle.png);
+  background-size: cover;
+  padding: 80px;
+}
+
+.top-title{
+  font-size: 48px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.top-subtitle{
+  font-size: 18px;
+  text-align: center;
+}
+
+/*=============================
+section共通
+=============================*/
+.section{
+  padding: 60px;
+}
+
+.section-title{
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+
+/*=============================
+about
+=============================*/
+.about-left{
+  float: left;
+  width: 48%
+}
+.about-right{
+  float: right;
+  width: 48%
+}
+
+/*=============================
+course
+=============================*/
+.course{
+  background-color: #e3fcf4;
+}
+
+.course-wrapper{
+  display: flex;
+  justify-content: space-around;
+}
+
+.course-item{
+  width: 30%;
+}
+
+/*=============================
+contact
+=============================*/
+.contact-message{
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+input[type="email"]{
+  width: 600px;
+  border: 3px solid #d8d8d8;
+  font-size: 18px;
+  display: block;
+  margin: auto;
+  padding: 15px;
+  border-radius: 999px;
+  margin-bottom: 20px;
+}
+
+.btn{
+  padding: 20px 60px;
+  display: inline-block;
+  background-color: #082B48;
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  border-radius: 4px;
+  border: none;
+}
+
+.btn:hover{
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.btn-register{
+  background-color: #ec6d64;
+  display: block;
+  margin: auto;
+}
+
+/*=============================
+footer
+=============================*/
+.footer{
+  background-color: #082B48;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.copyright{
+  font-size: 12px;
+  float: right;
+}
+
+/*=============================
+スマホ用の表示
+=============================*/
+@media only screen and (max-width:767px){
+
+  .clear::after{
+    content: none;
+  }
+
+  /*=============================
+  hedder
+  =============================*/
+  .header-left{
+    float:none;
+  }
+
+  .header-title{
+    text-align: none;
+  }
+
+  .header-right{
+    float:none;
+  }
+
+  .header-navi{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .header-navi-item{
+    float:none;
+    margin: 0;
+  }
+
+  /*=============================
+  top
+  =============================*/
+  .top{
+    padding: 120px 0;
+  }
+
+  .top-title{
+    font-size: 32px;
+  }
+
+  .top-subtitle{
+    font-size: 14px;
+  }
+
+  /*=============================
+  section共通
+  =============================*/
+  .section{
+    padding: 80px;
+  }
+
+  .section-title{
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .section p{
+    font-size: 14px;
+  }
+
+  /*=============================
+  about
+  =============================*/
+  .about-left{
+    float: none;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .about-right{
+    float: none;
+    width: 100%;
+  }
+
+
+  /*=============================
+  course
+  =============================*/
+
+  .course-wrapper{
+    flex-wrap: wrap;
+  }
+
+  .course-item{
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  /*=============================
+  contact
+  =============================*/
+  input[type="email"]{
+    width: 100%;
+  }
+
+  /*=============================
+  footer
+  =============================*/
+  .copyright{
+    font-size: 10px;
+    float: none;
+    text-align: center;
+  }
+
+
+}
