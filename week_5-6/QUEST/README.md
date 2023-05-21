@@ -223,7 +223,9 @@ Dockerコンテナの中に入る
 
 mysqlの中に入る
 
-```mysql -u root -p${MYSQL_PASSWORD} ${MYSQL_DATABASE}```
+```mysql -u root -p ```
+
+passwordを入力する
 
 </p>
 </details>
