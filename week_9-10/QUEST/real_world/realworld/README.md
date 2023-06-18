@@ -22,12 +22,12 @@ Railsの環境構築からRealWorldのAPIのうち、Create Article、Get Articl
 ディレクトリ名は適宜変えて下さい。
 
 ##### ディレクトリ構成
-real_world
-├realworld
-│├Gemfile
-│├Gemfile.lock
-│├entrypoint.sh
-│└Dockerfile
+real_world<br>
+├realworld<br>
+│├Gemfile<br>
+│├Gemfile.lock<br>
+│├entrypoint.sh<br>
+│└Dockerfile<br>
 └docker-compose.yml
 
 各種設定ファイルを作成、記述していきます。
