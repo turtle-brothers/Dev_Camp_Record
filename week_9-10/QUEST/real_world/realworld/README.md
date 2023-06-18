@@ -210,9 +210,9 @@ end
 <details>
 <summary><h4>RealWorldのエンドポイント実装</3></summary>
 
-環境構築が出来たら、エンドポイントを作成する為、モデル・コントローラー・ルートの設定をしていきます。
+環境構築が出来たら、エンドポイントを作成する為、Model・Controller・ルートの設定をしていきます。
 
-#### モデル
+#### Model
 Articleに必要なtitle, description, body, slugの型情報を記載し、マイグレーションを実行して、データベースにこの新しいテーブルを作成します。
 
 ```docker:console
@@ -220,15 +220,16 @@ rails generate model Article title:string description:text body:text slug:string
 rails db:migrate
 ```
 
-これでモデルが作成されました。
+これでModelが作成されました。
 
-次に、 ArticlesControllerを作成します。 このコントローラは、記事の作成、取得、更新、削除を担当します。 コントローラを作成するには、次のコマンドを実行します。
+#### Controller
+次に、 ArticlesControllerを作成します。 このControllerは、記事の作成、取得、更新、削除を担当します。 Controllerを作成するには、次のコマンドを実行します。
 
 ```docker:console
 rails generate controller Articles
 ```
 
-作成したコントローラに以下のアクションを追加します：
+作成したControllerに以下のアクションを追加します：
 
 ```ruby:controller.rb
 class Api::ArticlesController < ApplicationController
@@ -276,7 +277,10 @@ class Api::ArticlesController < ApplicationController
 end
 
 ```
+
+#### Route
 最後に、Routeに下記を追加する事で、アクションを有効にします。
+
 ```ruby:routes.rb
 Rails.application.routes.draw do
   namespace :api do
@@ -289,20 +293,20 @@ end
 </details>
 
 <details>
-<summary><h4>postmanでAPI確認</3></summary>
+<summary><h4>PostmanでAPI確認</3></summary>
 RealWorldのエンドポイントの実装が出来たら、PostmanでAPIをテストします。
 下記のURLにアクセスしAPIをテスとしていきます。
 
 https://web.postman.co/
 
 
-POST, GET, PUT, DELETEそれぞれ、実行するにあたり、下記に示すRealWorldの公式を参照します。
+POST, GET, PUT, DELETEそれぞれのアクションを実行するにあたり、下記に示すRealWorldの公式を参照します。
 
 https://realworld-docs.netlify.app/docs/specs/backend-specs/endpoints/#get-article
 
-なお、Article に関わる要素のうち、認証機能及び著者、タグ、お気に入り(favorite) は実装しないません。
+なお、Article に関わる要素のうち、認証機能及び著者、タグ、お気に入り(favorite) は実装していません。
 
-エンドポイント、HTTPリクエストに対して、HTTPレスポンス(200)が帰ってくれば成功です。
+エンドポイント、HTTPリクエストに対して、HTTPレスポンス(200)が帰ってくればAPIテスト成功です。下記にそれぞれアクションのエンドポイント、HTTPリクエストに対して、HTTPレスポンスを示します。
 
 ##### Create Article
 
