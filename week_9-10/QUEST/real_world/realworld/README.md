@@ -173,10 +173,7 @@ real_world-api-1    real_world-api      "entrypoint.sh /bin/…"   api          
 real_world-db-1     mysql:latest        "docker-entrypoint.s…"   db                  34 hours ago        Up 10 minutes       0.0.0.0:3306->3306/tcp, 33060/tcp
 ```
 docker-compose psコマンドでコンテナ情報を確認。
-apiとdbが起動(up,running)している事が確認出来たら、
-
-
-それでは、下記のアドレスにアクセスしてみましょう。
+apiとdbが起動(up,running)している事が確認出来たら、下記のアドレスにアクセスしてみましょう。<br>
 http://localhost:3000
 
 Railsのロゴが表示されたら成功です。
@@ -215,7 +212,7 @@ end
 
 環境構築が出来たら、エンドポイントを作成する為、モデル・コントローラー・ルートの設定をしていきます。
 
-####モデル
+####　モデル
 Articleに必要なtitle, description, body, slugの型情報を記載し、マイグレーションを実行して、データベースにこの新しいテーブルを作成します。
 
 ```docker:console
