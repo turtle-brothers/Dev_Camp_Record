@@ -15,3 +15,13 @@ https://qiita.com/t-kurasawa/items/23ee71341df6b37ff7cc
 https://zenn.dev/tabio/articles/amplify-studio-furusato-nozei
 https://zenn.dev/yutamiona/articles/b457ee3c9934d4
 https://qiita.com/mat827/items/b165f90a6703583b73ba
+
+
+https://zenn.dev/tokku5552/articles/aws-container
+https://docs.aws.amazon.com/ja_jp/cli/latest/userguide/getting-started-install.html
+https://github.com/tfutils/tfenv
+https://sig9.org/archives/4659
+https://sbopsv.github.io/cloud-tech/Terraform/Terraform05.docker
+https://github.com/awslabs/git-secrets
+https://qiita.com/kannkyo/items/465be766b5af0bc89749
+https://zenn.dev/keyproducts/articles/e0ec0ee58a35d7
