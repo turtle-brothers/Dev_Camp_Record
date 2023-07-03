@@ -307,12 +307,16 @@ https://realworld-docs.netlify.app/docs/specs/backend-specs/endpoints/#get-artic
 なお、Article に関わる要素のうち、認証機能及び著者、タグ、お気に入り(favorite) は実装していません。
 
 エンドポイント、HTTPリクエストに対して、HTTPレスポンス(200)が帰ってくればAPIテスト成功です。下記にそれぞれアクションのエンドポイント、HTTPリクエストに対して、HTTPレスポンスを示します。
+エンドポイントにはAWS上のインフラにデプロイした下記を使用します。
+
+https://dev-elb.zumens.jp
+
 
 ##### Create Article
 
 - エンドポイント
 
-http://localhost:3000/api/articles
+https://dev-elb.zumens.jp/api/articles
 
 - HTTPリクエスト
 ```text:body-raw-JSON
@@ -343,7 +347,7 @@ http://localhost:3000/api/articles
 
 - エンドポイント
 
-http://localhost:3000/api/articles/:slug
+https://dev-elb.zumens.jp/api/articles/:slug
 
 - HTTPリクエスト
 ```text:body-raw-JSON
@@ -366,7 +370,7 @@ http://localhost:3000/api/articles/:slug
 
 - エンドポイント
 
-http://localhost:3000/api/articles/:slug
+https://dev-elb.zumens.jp/api/articles/:slug
 
 - HTTPリクエスト
 ```text:body-raw-JSON
@@ -394,7 +398,7 @@ http://localhost:3000/api/articles/:slug
 
 - エンドポイント
 
-http://localhost:3000/api/articles/:slug
+https://dev-elb.zumens.jp/api/articles/:slug
 
 - HTTPリクエスト
 ```text:body-raw-JSON
