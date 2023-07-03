@@ -410,6 +410,8 @@ https://dev-elb.zumens.jp/api/articles/:slug
 
 </details>
 
+
+<details>
 <summary><h4>システム構成図</h4></summary>
 
 ![](./infra-stracture.svg)
